@@ -1,0 +1,264 @@
+body
+{
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+
+th
+{
+	color: white;
+	padding-top: 2vh !important;
+	font-size: 2vh;
+}
+
+#top
+{
+	padding-top: 1vh;
+	position: fixed;
+	width: 100%;
+	height: 7.5vh;
+	z-index: 10;
+	background-color: rgb(205, 4, 11);
+}
+
+#topmiddle
+{
+	position: fixed;
+	width: 100%;
+	height: 4.5vh;
+	z-index: 10;
+	left: 0px;
+	top: 7.5vh;
+	background-color: rgb(205, 4, 11);
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+	z-index: 9;
+	box-shadow: 0 2px 2px black;
+}
+
+#topmiddle table
+{
+	position: absolute;
+	left: 0px;
+	width: 99vw;
+	background-color: transparent;
+	height: 4.5vh;
+}
+
+#topmiddle thead th
+{
+	height: 100%;
+}
+
+#middle
+{
+	position: absolute;
+	width: 100%;
+	height: 88vh;
+	top: 12vh;
+	z-index: 5;
+	overflow-y: scroll;
+}
+
+.header
+{
+	font-family: 'Archivo Black', sans-serif;
+}
+
+th:nth-child(1),
+td:nth-child(1)
+{
+	width: 5%;
+}
+
+th:nth-child(2),
+td:nth-child(2)
+{
+	width: 19%;
+}
+
+th:nth-child(3),
+td:nth-child(3)
+{
+	width: 12.5%;
+}
+
+th:nth-child(4),
+td:nth-child(4)
+{
+	width: 12.5%;
+}
+
+th:nth-child(5),
+td:nth-child(5)
+{
+	width: 12.5%;
+}
+
+th:nth-child(6),
+td:nth-child(6)
+{
+	width: 12.5%;
+}
+
+th:nth-child(7),
+td:nth-child(7)
+{
+	width: 12.5%;
+}
+
+th:nth-child(8),
+td:nth-child(8)
+{
+	width: 12.5%;
+}
+
+img[src='img/verizon.png']
+{
+	position: absolute;
+	top: 0px;
+	left: calc(22.5vh + 10px);
+	height: 7.5vh;
+}
+
+.header
+{
+	font-size: 6vh;
+	color: white;
+	margin: 0px;
+	padding: 0px;
+	letter-spacing: -.3vh;
+}
+
+.header2
+{
+	font-size: 4vh;
+	color: white;
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+	top: calc(1.75vh + 1px);
+	left: calc(25.5vh + 25px);
+}
+
+table
+{
+
+	border-spacing: 1px;
+	border-collapse: separate;
+}
+
+td, th
+{
+	border-radius: 8px;
+	font-weight: 700;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	text-align: center;
+}
+
+div.dropdown
+{
+	width: 100%;
+	background-color: rgb(205, 4, 11);
+	height: 100%;
+	font-weight: 700;
+	color: white;
+}
+
+button.dropdown-toggle
+{
+	width: 100%;
+	background-color: rgb(205, 4, 11);
+	box-shadow: 0 2px 10px #960308;
+	height: 90%;
+	font-weight: 700;
+	color: white;
+}
+
+ul.dropdown-menu
+{
+	width: 100%;
+	background-color: white !important;
+}
+
+ul.dropdown-menu a:hover
+{
+	background-color: rgb(205, 4, 11);
+	color: white;
+}
+
+ul.dropdown-menu a
+{
+	background-color: white;
+}
+
+button.dropdown-toggle:active, button.dropdown-toggle:focus, button.dropdown-toggle:hover
+{
+	color: white;
+}
+
+.lightblue td
+{
+	background-color: #80B3FF;
+}
+
+.blue td
+{
+	background-color: #0066FF;
+	color: white;
+}
+
+.darkblue td
+{
+	background-color: #003380;
+	color: white;
+}
+
+.lightpurple td
+{
+	background-color: #BF80FF;
+}
+
+.purple
+{
+	background-color: #8000FF;
+	color: white;
+}
+
+.darkpurple
+{
+	background-color: #5900B3;
+	color: white;
+}
+
+.lightyellow
+{
+	background-color: #FFE680;
+}
+
+.yellow
+{
+	background-color: #FFCC00;
+}
+
+.darkyellow
+{
+	background-color: #CCA300;
+	color: white;
+}
+
+.white
+{
+	background-color: #FFFFFF;
+}
+
+.black
+{
+	background-color: #000000;
+	color: white;
+}

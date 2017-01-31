@@ -1,0 +1,82 @@
+<html>
+
+	<head>
+		<title>VZW Live Dashboard</title>
+		<script src="js/angular.min.js"></script>
+		<script src="js/maintable.js"></script>
+		<script src="js/socket.io.js"></script>
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+	</head>
+
+	<body>
+
+		<div class="container-fluid" ng-app="maintable" ng-controller="display">
+
+			<div class="row" id="top">
+				<div class="col-xs-9">
+					<h1 class="header">verizon</h1>					
+					<img src="img/verizon.png">
+					<h1 class="header2">TEAM REALTIME</h1>					
+				</div>
+				<div class="col-xs-3">
+					<div class="dropdown">
+						<button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">
+							{{ filtername }}
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu">
+							<li teamid="{{ null }}"><a href="#" ng-click="dropdown_click({'ID': null, 'TeamName': 'ALL'})">ALL</a></li>
+							<li ng-repeat="item in teamdata track by $index" teamid="{{ item.ID }}">
+								<a href="#" ng-click="dropdown_click(this.item)">
+								{{ item.TeamName }}
+								</a
+							</li>
+						</ul>
+					</div>
+				</div>				
+			</div>
+			<div class="row" id="topmiddle">
+				<table>
+					<thead>
+						<tr>
+							<th>User</th>
+							<th>Name</th>
+							<th>Station</th>
+							<th>Status</th>
+							<th></th>
+							<th>Time in Status</th>
+							<th>Campaign ID</th>
+							<th>Calls Today</th>	
+						</tr>
+					</thead>
+				</table>
+			</div>
+			<div class="row" id="middle">
+
+				<table>
+					<tbody>
+						<tr>&nbsp;</tr>
+						<tr ng-repeat="row in tabledata" ng-class="color(this.row)">
+							<td>{{ row.user }}</td>
+							<td>{{ row.fullname }}</td>
+							<td>{{ row.station }}</td>
+							<td>{{ row.status }}</td>
+							<td>{{ row.substatus }}</td>
+							<td>{{ row.laststatechange }}</td>
+							<td>{{ row.campaignid }}</td>
+							<td>{{ row.callstoday }}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	
+		</div>
+
+	</body>
+
+</html>
